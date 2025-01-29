@@ -1,32 +1,12 @@
-# Dynamic-Pricing-EDA
+# Dynamic Pricing Model for Ride-Sharing Company
 
-### Overview 
+## Overview 
 
-This project focuses on building a dynamic pricing model for a ride-sharing service using historical ride data. The goal is to implement a data-driven pricing strategy that optimizes fares based on real-time market conditions while considering factors like demand, supply, ride duration, and customer loyalty.
+This repository contains a dynamic pricing model for a ride-sharing company. The model predicts the optimal fare for a ride based on historical data and real-time market conditions such as demand patterns and supply availability.
 
-### Project Objectives
+### Project Overview
 
-1. **Exploratory Data Analysis (EDA):**
-   - Understand the dataset through statistical summaries and visualizations.
-   - Identify key factors influencing ride costs.
-
-2. **Feature Engineering:**
-   - Transform raw data into meaningful features, including one-hot encoding of categorical variables and scaling of numerical features.
-   - Create derived metrics like the demand-supply ratio.
-
-3. **Pricing Strategies:**
-   - **Rule-Based System:** Define base pricing rules based on expected ride duration.
-   - **Fuzzy Logic:** Incorporate fuzzy logic to adjust prices dynamically based on demand and supply patterns.
-
-4. **Predictive Modeling:**
-   - Train machine learning models to predict optimal ride fares.
-   - Evaluate model performance using metrics like Mean Squared Error (MSE), Mean Absolute Error (MAE), and R² Score.
-
-5. **Dynamic Pricing Simulation:**
-   - Simulate real-world scenarios to adjust prices dynamically and optimize revenue.
-
-6. **Data Visualizations:**
-   - Explore ride patterns and trends using a variety of plots, including correlation heatmaps, scatter plots, and interactive visualizations.
+The goal of this project is to develop a predictive model that adjusts ride fares dynamically using a variety of features including ride duration, the number of riders, the number of drivers, location category, customer loyalty status, and vehicle type, among others. The model uses machine learning algorithms to predict ride costs based on historical data and features related to the current market conditions.
 
 ### Dataset Overview
 
@@ -45,6 +25,19 @@ The dataset contains 1,000 entries and the following features:
 | `Expected_Ride_Duration`   | Predicted duration of the ride (in minutes). |
 | `Historical_Cost_of_Ride`  | Actual cost of the ride (in currency).       |
 
+### Model Evaluation Results:
+
+After training the model, the following evaluation metrics were calculated:
+
+- RMSE (Root Mean Squared Error): 75.45
+- R² (R-squared): 0.839
+
+These results indicate that the model does a good job of predicting ride costs with a relatively high R² score and an acceptable RMSE value.
+
+### Feature Importance
+
+![screenshot-localhost_8888-2025 01 29-13_25_41](https://github.com/user-attachments/assets/193ef012-a2c8-4b40-bd40-80a89aae6fdc)
+
 ### Source
 
-https://www.kaggle.com/datasets/arashnic/dynamic-pricing-dataset
+Dataset: [Dynamic Pricing Dataset on Kaggle](https://www.kaggle.com/datasets/arashnic/dynamic-pricing-dataset)
